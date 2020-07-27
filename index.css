@@ -1,0 +1,25 @@
+*{
+    border: 0.5px solid grey;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.imageTextSection {
+    display: flex;
+    justify-content: center;
+}
+
+/* Source: https://stackoverflow.com/a/11763434/1291940 */
+
+.container {
+    width: 25%;
+    height: 25%;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
