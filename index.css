@@ -5,34 +5,54 @@
 h1 {
     display: flex;
     justify-content: center;
+
 }
 
-.shrinkImage {
+/* Changes top nav bar text color to white*/
+.topnav a{
 
-    /* Source: https://stackoverflow.com/a/11763434/1291940 */
-    width: 25%;
-    height: 25%;
-    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
+}
+
+body {
+    background-image: "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+}
+
   
   #paragraphOne {
     display: flex;
     align-items: flex-end;
   }
 
-#zerothSection {
+#headerSection {
     display: flex;
-    justify-content: space-evenly;
-}
-#firstSection {
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    justify-content: space-between;
 }
 
-#secondSection{
+.backgroundImage {
+
+    width: 100%;
+    height: 100%;
+}
+
+#buttonTextContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#secondSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#thirdSection{
     display: flex;
     justify-content: space-evenly;
 }
@@ -40,16 +60,26 @@ h1 {
 .smallContainer {
     display: flex;
     flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
 }
+ 
 
-#grad {
+@media (max-width: 800px) {
 
-    /* Source: https://www.w3schools.com/css/css3_gradients.asp */
-    height: 600px;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
-  }
+    #buttonTextContainer {
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
 
-@media (max-width: 500px) {
+    #discoverHeader {
+        font-size: 16px;
+    }
+
+    #backgroundImageParagraph {
+        font-size: 9px;
+    }
 
 }
