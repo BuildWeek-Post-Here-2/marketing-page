@@ -8,9 +8,17 @@ h1 {
 
 }
 
-/* Changes top nav bar text color to white*/
+/* Changes top nav bar text styling*/
 .topnav a{
+    color: black;
+    text-decoration: none;
+}
 
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
 }
 
 body {
@@ -38,7 +46,26 @@ body {
     height: 100%;
 }
 
+#signUpButton {
+    border-radius: 500px;
+    background-color: #555555;
+    color: white;
+    width: 40%;
+    height: 2rem;
+    border: 0.5px solid grey;
+}
+
+#signUpButton a {
+    color: white;
+    text-decoration: none;
+}
+
+
 #buttonTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: absolute;
     left: 50%;
     top: 50%;
@@ -48,13 +75,17 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 5%;
 }
 
 #thirdSection{
     display: flex;
     justify-content: space-evenly;
+
+    margin-top: 5%;
 }
 
 .smallContainer {
@@ -65,6 +96,17 @@ body {
     align-items: center;
 }
  
+#firstImage {
+    width: 10%;
+}
+
+#secondImage {
+    width: 10%;
+}
+
+#thirdImage {
+    width: 10%
+}
 
 @media (max-width: 800px) {
 
