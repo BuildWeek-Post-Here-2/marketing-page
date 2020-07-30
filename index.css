@@ -125,6 +125,11 @@ body {
     height: 100px;
 }
 
+.attribution {
+    font-size: 7px;
+    color: grey;
+}
+
 @media (max-width: 800px) {
 
     #headerSection {
