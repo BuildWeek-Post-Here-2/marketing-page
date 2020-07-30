@@ -1,14 +1,20 @@
 *{
-    border: 0.5px solid grey;
+    /*border: 0.5px solid grey;*/
 }
+
 
 #aboutPageContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
     
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 500px;
+    left: 7%;
+    top: 25%;
 }
 
 
@@ -41,18 +47,57 @@
     height: 100%;
 }
 
-#aboutPageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    height: 50%;
-    left: 10%;
-    top: 30%;
-}
+
 
 #aboutPageParagraph {
     color: white;
     font-weight: bold;
+    font-size: 30px;
+
+}
+
+#logoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+#binocularsIcon {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 900px) {
+
+    #headerSection {
+        display: flex;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 2%;
+        justify-content: space-between;
+    }
+
+    #aboutPageContainer {
+        position: absolute;
+        height: 100px;
+        top: 10%;
+    }
+
+    #aboutPageContainer h2 {
+        font-size: 20px;
+    }
+
+    #aboutPageParagraph {
+        font-size: 15px;
+    }
+
+    #logoContainer h1 {
+        font-size: 12px;
+    }
+    #binocularsIcon {
+        width: 50px;
+        height: 50px;
+    }
 }
